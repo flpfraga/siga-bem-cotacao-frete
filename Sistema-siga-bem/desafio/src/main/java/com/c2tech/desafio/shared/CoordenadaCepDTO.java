@@ -2,82 +2,88 @@ package com.c2tech.desafio.shared;
 
 public class CoordenadaCepDTO {
     
-    private String cep;
-    private String logradouro;
-    private String complemento;
-    private String bairro;
-    private String localidade;
-    private String uf;
-    private String ibge;
-    private String gia;
-    private String ddd;
-    private String siafi;
+	private String cepOrigem;
+    private String cepDestino;
+    private Float peso;
+    private String destinatario;
+    private String ufOrigem;
+    private String ufDestino;
+    private String dddOrigem;
+    private String dddDestino;
+    
+	public CoordenadaCepDTO() {
+		// TODO Auto-generated constructor stub
+	}
 
-    public String getCep() {
-        return cep;
-    }
-    public void setCep(String cep) {
-        this.cep = cep;
-    }
-    public String getLogradouro() {
-        return logradouro;
-    }
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
-    }
-    public String getComplemento() {
-        return complemento;
-    }
-    public void setComplemento(String complemento) {
-        this.complemento = complemento;
-    }
-    public String getBairro() {
-        return bairro;
-    }
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
-    public String getLocalidade() {
-        return localidade;
-    }
-    public void setLocalidade(String localidade) {
-        this.localidade = localidade;
-    }
-    public String getUf() {
-        return uf;
-    }
-    public void setUf(String uf) {
-        this.uf = uf;
-    }
-    public String getIbge() {
-        return ibge;
-    }
-    public void setIbge(String ibge) {
-        this.ibge = ibge;
-    }
-    public String getGia() {
-        return gia;
-    }
-    public void setGia(String gia) {
-        this.gia = gia;
-    }
-    public String getDdd() {
-        return ddd;
-    }
-    public void setDdd(String ddd) {
-        this.ddd = ddd;
-    }
-    public String getSiafi() {
-        return siafi;
-    }
-    public void setSiafi(String siafi) {
-        this.siafi = siafi;
-    }
-     public void print(){
-        System.out.println("cep " + cep);
-        System.out.println("uf " + uf);
-        System.out.println("ddd" + ddd);
-    }
-   
+	public String getCepOrigem() {
+		return cepOrigem;
+	}
+
+	public void setCepOrigem(String cepOrigem) {
+		this.cepOrigem = cepOrigem;
+	}
+
+	public String getCepDestino() {
+		return cepDestino;
+	}
+
+	public void setCepDestino(String cepDestino) {
+		this.cepDestino = cepDestino;
+	}
+
+	public Float getPeso() {
+		return peso;
+	}
+
+	public void setPeso(Float peso) {
+		this.peso = peso;
+	}
+
+	public String getDestinatario() {
+		return destinatario;
+	}
+
+	public void setDestinatario(String destinatario) {
+		this.destinatario = destinatario;
+	}
+
+	public String getUfOrigem() {
+		return ufOrigem;
+	}
+
+	public void setUfOrigem(String ufOrigem) {
+		this.ufOrigem = ufOrigem;
+	}
+
+	public String getUfDestino() {
+		return ufDestino;
+	}
+
+	public void setUfDestino(String ufDestino) {
+		this.ufDestino = ufDestino;
+	}
+
+	public String getDddOrigem() {
+		return dddOrigem;
+	}
+
+	public void setDddOrigem(String dddOrigem) {
+		this.dddOrigem = dddOrigem;
+	}
+
+	public String getDddDestino() {
+		return dddDestino;
+	}
+
+	public void setDddDestino(String dddDestino) {
+		this.dddDestino = dddDestino;
+	}
+
+	@Override
+	public String toString() {
+		return "CoordenadaCepDTO [cepOrigem=" + cepOrigem + ", cepDestino=" + cepDestino + ", peso=" + peso
+				+ ", destinatario=" + destinatario + ", ufOrigem=" + ufOrigem + ", ufDestino=" + ufDestino
+				+ ", dddOrigem=" + dddOrigem + ", dddDestino=" + dddDestino + "]";
+	}
 
 }

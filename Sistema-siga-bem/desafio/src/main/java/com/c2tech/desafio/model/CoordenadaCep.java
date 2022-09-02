@@ -1,7 +1,10 @@
 package com.c2tech.desafio.model;
 
-public class CoordenadaCep {
+import java.io.Serializable;
+
+public class CoordenadaCep implements Serializable{
     
+	 private static final long serialVersionUID = 1L;
     //#region atributes
 
     private String cep;
@@ -76,16 +79,14 @@ public class CoordenadaCep {
     }
     public void setSiafi(String siafi) {
         this.siafi = siafi;
-    }
-
-   
-   
+    }   
     //#endregion get and set
-    
-    public void print(){
-        System.out.println("cep " + cep);
-        System.out.println("uf " + uf);
-        System.out.println("ddd" + ddd);
-    }
+	@Override
+	public String toString() {
+		return "CoordenadaCep [cep=" + cep + ", logradouro=" + logradouro + ", complemento=" + complemento + ", bairro="
+				+ bairro + ", localidade=" + localidade + ", uf=" + uf + ", ibge=" + ibge + ", gia=" + gia + ", ddd="
+				+ ddd + ", siafi=" + siafi + "]";
+	}
+
 
 }

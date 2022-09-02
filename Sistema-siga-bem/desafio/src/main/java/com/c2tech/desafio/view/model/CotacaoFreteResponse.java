@@ -4,7 +4,6 @@ public class CotacaoFreteResponse {
 
     private String cepOrigem;
     private String cepDestino;
-
     private Double vlTotalFrete;
     private String dataPrevistaEntrega;
 
